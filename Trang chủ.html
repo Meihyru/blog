@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Beauty Blog</title>
+</head>
+<body>
+  <header>
+    <!-- Phần tiêu đề của trang web -->
+	<style> .Banner{ width:100%;} </style>
+	<img class="Banner" src="C:\xampp\htdocs\Beauty Blog\Header.svg" alt="Programing">
+	<!--Border=1 BorderColor= "Purple" CellSpacing=0-->
+	<nav id="menu">
+		<table width="100%" CellSpacing=2 >
+			<tr style="color:#ab5c72" >
+				<th><img class="logo" src="C:\xampp\htdocs\Beauty Blog\Logo.svg" width="194px" height="50px" alt="Programing"></th>
+				<th align="center" valign="middle"><a href="Trang chủ.html">Trang chủ</a></th>
+				<!--<th align="center" valign="middle"><a href="#">Giới thiệu</a></th>-->
+				<th align="center" valign="middle"><a href="Chuyên mục Skincare.html">Chuyên mục Skincare</a></th>
+				<th align="center" valign="middle"><a href="#">Chuyên mục Makeup</a></th>
+			</tr>
+			<br>
+		</table>  
+    </nav>
+  </header>
+  <main>
+    <!-- Nội dung chính của trang web -->
+	<h1 style="font-family:NotoSerifDisplay-Condensed; font-size:45px; color:#502d25" align="center" >
+		ABOUT US
+	</h1>
+	<div id="giới thiệu">
+		<div style="float:right; margin-left:20px" id="ảnh giới thiệu">
+			<img src="C:\xampp\htdocs\Beauty Blog\hình 1.jpg" width="300px" height="300px" alt="Programing">
+		</div>
+			<div style="font-family:NotoSerifDisplay-Condensed; font-size:20px; color:#502d25;" align="justify"  id="text" >
+				<p><br>
+				Chào mừng bạn đến với <mark style="background-color:#edb1b3">Panmela Beauty</mark>, không gian trực tuyến dành cho những ai đam mê làm đẹp. Đây là nơi bạn có thể khám phá các bí quyết chăm sóc da, trang điểm tự nhiên, và cập nhật xu hướng mỹ phẩm mới nhất. Chúng tôi tin rằng làm đẹp không chỉ là ngoại hình, mà còn là cách nuôi dưỡng sự tự tin và niềm vui trong cuộc sống.
+				<!--Chào mừng bạn đến với <mark style="background-color:#edb1b3">Panmela Beauty</mark>, không gian trực tuyến dành riêng cho những ai đam mê và yêu thích việc chăm sóc sắc đẹp. Nơi đây không chỉ đơn thuần là một trang web chia sẻ kiến thức, mà còn là người bạn đồng hành, giúp bạn khám phá và tận hưởng những bí quyết làm đẹp tinh tế. Từ những mẹo nhỏ về chăm sóc làn da căng mịn, cho đến các bước trang điểm hoàn hảo để tôn lên vẻ đẹp tự nhiên, tất cả đều được đúc kết từ kinh nghiệm thực tế và sự cập nhật liên tục của các xu hướng thời trang, mỹ phẩm mới nhất.-->
+				Chúng tôi tin rằng làm đẹp không chỉ là bề ngoài, mà còn là cách để mỗi người phụ nữ cảm nhận giá trị của bản thân, nuôi dưỡng sự tự tin và niềm vui trong cuộc sống. Với các bài viết chi tiết, dễ hiểu, cùng những gợi ý về sản phẩm chất lượng, <mark style="background-color:#edb1b3">Panmela Beauty</mark> sẽ là cẩm nang không thể thiếu cho mọi cô nàng hiện đại. Dù bạn là người mới bắt đầu học cách chăm sóc bản thân hay đã là một chuyên gia làm đẹp, chắc chắn bạn sẽ tìm thấy cho mình những bí quyết phù hợp để tỏa sáng theo cách riêng.
+				Hãy để chúng tôi cùng bạn trên hành trình khám phá và yêu thương chính mình qua từng thói quen làm đẹp mỗi ngày!
+				</p>
+			</div>
+	</div>
+		<p>.</p>
+	<div id="chuyen-tab">
+		<hr>
+		<div style="float:right; margin-left:20px; font-family:NotoSerifDisplay-Condensed; font-size:15px;">
+			<p>
+				<a href="#">Trang tiếp theo >></a>
+			</p>
+		</div>
+	</div>
+	<div class="comment-icon">
+		
+			<input id="like" type="radio" name="ikon"  >			
+			    <label for="like">&#128077;</label>
+			
+			<input id="heart" type="radio" name="ikon"  >
+			    <label for="heart">&#129505;</label>
+			
+			<input id="haha" type="radio" name="ikon"  >
+			    <label for="haha">&#128518;</label>
+			
+			<input id="angry" type="radio" name="ikon"  >
+			    <label for="angry">&#128544;</label>
+			
+			<input id="sad" type="radio" name="ikon" >
+		        <label for="sad">&#128546;</label>
+	
+    </div>
+	<style>
+		.comment-icon 
+		{
+			gap: 15px;
+			font-size: 30px;
+			cursor: pointer;
+			justify-content: left;
+			display: flex;
+		}
+		.comment-icon input[type="radio"]{ 
+			display: none; 
+		}
+		.comment-icon label:hover {
+		transform: scale(1.3);
+		}
+		.comment-icon input[type="radio"]:checked + label {
+		color: #FFD700; /* Màu vàng */
+		transform: scale(1.3);
+	</style>
+  </main>
+  
+  <footer>
+    <img class="Banner" src="C:\xampp\htdocs\Beauty Blog\Footer.svg" alt="Programing">
+	<p style="text-align:center">Bản quyền © 2024 Trang web của tôi. Mọi quyền được bảo lưu.</p>
+	<br>
+    <!--- <nav>
+	<table>
+		<tr><th><a href="#">Trang chủ</a></th><th><a href="#">Giới thiệu</a></th><th><a href="#">Liên hệ</a></th></tr>
+	</table>
+    </nav>
+		
+		<div style="float:left; margin-right:20px">
+			<p>
+				<a href="#">Trang trước đó</a>
+			</p>
+		</div> -->
+  </footer>
+  <style>
+	body{
+		background-color: #f8eeec;
+	}
+	main{
+		max-width: 1080px;
+		margin: 0px auto;
+	}
+	hr{
+		color: white; 
+		background: white;
+		border: 0;
+		height: 1px;
+	}
+	label.ikon:hover { transform: scale(1.3); }
+	
+	a{
+		color:#ab5c72;
+		text-decoration: none;
+	}
+  </style>
+  <!-- giới thiệu{display: flex;}
+	ảnh giới thiệu{
+		flex-basis: 27,5%;
+		margin-left: 10px;
+	}
+	
+	header{
+	background-color: #f8eeec;
+	}
+	footer{
+	background-color: #f8eeec;
+	} -->
+</body>
+</html>
